@@ -1,0 +1,33 @@
+settings =
+{
+	orientation =
+ 	{
+		default = "landscapeRight",
+ 		supported =
+ 		{
+ 		"landscapeLeft", "landscapeRight"
+		}
+	},
+	plugins =
+    {
+        ["plugin.google.play.services"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+		["CoronaProvider.analytics.flurry"] =
+        {
+            publisherId = "com.coronalabs"
+        },
+    },
+	android =
+    {
+		usesExpansionFile = true,
+        versionCode = "6",
+		usesPermissions =
+			{
+				"android.permission.INTERNET",
+				"com.android.vending.CHECK_LICENSE",
+				"android.permission.WRITE_EXTERNAL_STORAGE"
+			},
+    },
+}
